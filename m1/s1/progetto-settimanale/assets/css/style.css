@@ -1,1 +1,201 @@
 /* Your styles here */
+/*font-family: 'Montserrat', sans-serif; bold
+  font-family: 'Open Sans', sans-serif; 400*/
+
+/*stili generali*/
+
+body {
+    color: #393d41;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.65 ;
+}
+
+h1{
+    color: #25a2c3;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    line-height: 1.5;
+    font-size: 2.3rem;
+    margin-bottom: 13px;
+}
+
+h2{
+    color: #25a2c3;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    line-height: 1.5;
+    font-size: 2rem;
+}
+
+h3{
+    color: #25a2c3;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    line-height: 1.5;
+    font-size: 1.4rem;
+}
+
+h4{
+    color: #25a2c3;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    line-height: 1.5;
+    font-size: 1.1rem;
+    margin-bottom: 13px;
+}
+
+footer h2{
+    color: #c8e7f0;
+    margin: 0 auto 20px auto;
+}
+
+footer a{
+    color: #c8e7f0;
+}
+
+main{
+    text-align: center;
+}
+
+header{
+    text-align: center;
+}
+
+aside{
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+}
+
+/*stili specifici*/
+
+footer {
+    color: #c8e7f0;
+    background-color: #25a2c3;
+    padding:35px 20px 50px 20px;
+    height: auto;
+}
+
+#contatti{
+    padding: 10px 30px;
+    padding-bottom:0 ;
+    margin: 0;
+}
+
+#indirizzo::after{
+    content: 'Via Appia 1 - 00100 Roma (RM)';
+}
+
+#separatore{
+    border-top: 1px solid #c8e7f0 ;
+    width:35% ;
+    margin: 25px auto;
+}
+
+header{
+    background-color: black;
+}
+
+header>img{
+    height: 2.5rem;
+    padding: 1.5rem 0;
+}
+
+#pulsante{
+    background-color: #f04c2f;
+    font-family:'Montserrat', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 5%;
+    margin-top:400px;
+    padding: 10px 20px ;
+    font-size: 15px;
+    color: white;
+}
+
+.scheda {
+    border:1px solid #dee1e3;
+    margin: 35px 28px;
+    border-radius: 2%;
+    padding-bottom: 25px;
+}
+
+#intro{
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 45px ;
+}
+
+#rotondo{
+    border-radius: 100%;
+    margin: 30px auto;
+    width: 310px;
+    height: 310px;
+}
+
+#intro .pulsante{
+    padding: 0.5rem;
+}
+
+#garanzie{
+    background-color: #e22d0e;
+    color: white;
+    padding: 60px 0 40px 0;
+}
+
+.standard-p{
+    font-size: 1.2rem;
+    margin:0px 0 25px 0 ;
+}
+
+.special-p{
+    font-size: 0.7rem;
+}
+
+#mid-section{
+    margin: 50px 16.5px;
+}
+
+aside img{
+    width: 100%;
+    height: auto;
+}
+
+aside{
+    margin: 60px 0px;
+}
+
+.contenitori-hp{
+    margin: 0;
+    padding: 10px 10px 0 10px;
+}
+
+#garanzie .standard-p{
+    font-style: italic;
+    padding: 20px 0;
+}
+
+#garanzie h2{
+    color: white;
+}
+
+#garanzie h4{
+    color: white;
+}
+
+i{
+    color: #25a2c3;
+    background-color:#c8e7f0 ;
+    font-size: 80%;
+    padding: 3px;
+}
+
+.scheda>div{
+    padding-top: 15px;
+    padding-left: 18px;
+    padding-right: 18px;
+}

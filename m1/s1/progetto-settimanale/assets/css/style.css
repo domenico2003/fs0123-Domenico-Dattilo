@@ -15,17 +15,18 @@ h1{
     color: #25a2c3;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    line-height: 1.5;
-    font-size: 2.3rem;
+    line-height: 1;
+    font-size: 2.5rem;
     margin-bottom: 13px;
 }
+
 
 h2{
     color: #25a2c3;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     line-height: 1.5;
-    font-size: 2rem;
+    font-size: 2.2rem;
 }
 
 h3{
@@ -33,7 +34,7 @@ h3{
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     line-height: 1.5;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
 }
 
 h4{
@@ -41,12 +42,12 @@ h4{
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     line-height: 1.5;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     margin-bottom: 13px;
 }
 
 footer h2{
-    color: #c8e7f0;
+    color: white;
     margin: 0 auto 20px auto;
 }
 
@@ -66,17 +67,14 @@ aside{
     text-align: center;
 }
 
-footer{
-    text-align: center;
-}
-
 /*stili specifici*/
 
 footer {
     color: #c8e7f0;
     background-color: #25a2c3;
     padding:35px 20px 50px 20px;
-    height: auto;
+    height: 19rem;
+    text-align: center;
 }
 
 #contatti{
@@ -90,9 +88,9 @@ footer {
 }
 
 #separatore{
-    border-top: 1px solid #c8e7f0 ;
-    width:35% ;
-    margin: 25px auto;
+    border-top: 2px solid #c8e7f0 ;
+    width:50% ;
+    margin: 40px auto;
 }
 
 header{
@@ -100,8 +98,8 @@ header{
 }
 
 header>img{
-    height: 2.5rem;
-    padding: 1.5rem 0;
+    height: 3rem;
+    padding: 2rem 0;
 }
 
 #pulsante{
@@ -111,9 +109,10 @@ header>img{
     text-decoration: none;
     border-radius: 5%;
     margin-top:400px;
-    padding: 10px 20px ;
-    font-size: 15px;
+    padding: 17px 35px ;
+    font-size: 16.5px;
     color: white;
+    padding-top: 13PX ;
 }
 
 .scheda {
@@ -123,16 +122,24 @@ header>img{
     padding-bottom: 25px;
 }
 
+.contenitori-hp>h3{
+    margin: 1rem;
+}
+
+#intro>p{
+    padding:0.5rem;
+}
+
 #intro{
     background-image: url(../images/banner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 45px ;
+    padding: 4.5rem 1.5rem 4rem 1.5rem ;
 }
 
 #rotondo{
     border-radius: 100%;
-    margin: 30px auto;
+    margin: 20px auto;
     width: 310px;
     height: 310px;
 }
@@ -152,12 +159,16 @@ header>img{
     margin:0px 0 25px 0 ;
 }
 
+.plus{
+    font-size: 1.4rem;
+}
+
 .special-p{
-    font-size: 0.7rem;
+    font-size: 1rem;
 }
 
 #mid-section{
-    margin: 50px 16.5px;
+    margin: 70px 16.5px;
 }
 
 aside img{
@@ -171,7 +182,7 @@ aside{
 
 .contenitori-hp{
     margin: 0;
-    padding: 10px 10px 0 10px;
+    padding: 0px 10px;
 }
 
 #garanzie .standard-p{
@@ -189,7 +200,7 @@ aside{
 
 i{
     color: #25a2c3;
-    background-color:#c8e7f0 ;
+    background-color:white ;
     font-size: 80%;
     padding: 3px;
 }

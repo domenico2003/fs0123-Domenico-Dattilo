@@ -10,14 +10,25 @@
     <script>
         var anni= prompt ('quanti hanni hai?')
 
-        if(conferma){
-            document.write('sei maggiorenne')
-        }else{
-            document.write('non puoi entrare')
+        if(Number(anni)){
+            if(anni >= 18 && anni <= 110){
+                document.write("sei maggiorenne");
+            }
+            else if(anni >= 110){
+
+                document.write("non prendermi in giro");
+            }
+            else{
+                document.write("sei minorenne");
+            }
+        }
+        else if(anni == 0){
+                document.write("com'è possibile")
+            }
+        else{
+            document.write("inserisci solo numeri")
         }
 
-        var conferma = number(anni)>= 18
-        
 
     </script>
 </body>

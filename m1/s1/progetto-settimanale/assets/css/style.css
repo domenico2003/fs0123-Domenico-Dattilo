@@ -120,6 +120,7 @@ header>img{
     margin: 35px 28px;
     border-radius: 2%;
     padding-bottom: 25px;
+    max-width: 500px;
 }
 
 .contenitori-hp>h3{

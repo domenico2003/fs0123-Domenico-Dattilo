@@ -28,7 +28,7 @@ console.log(typeof dataType4);//dato tipo booleano
 let dataType5 = ['Array'];
 console.log(Array.isArray(dataType5));//dato tipo array
 
-let dataType6 = {Object}
+let dataType6 = { Object }
 console.log(typeof dataType6);//dato tipo oggetto
 
 
@@ -49,7 +49,7 @@ console.log(name);
 
 let number1 = 12;
 let number2 = 20;
-let number3 = number1+number2;
+let number3 = number1 + number2;
 console.log(number3);
 
 /* ESERCIZIO 4
@@ -88,7 +88,7 @@ console.log(costante); //Assignment to constant variable.
 
 let number4 = 4;
 
-let sottrazione = x-number4;
+let sottrazione = x - number4;
 console.log(sottrazione);
 
 
@@ -105,26 +105,26 @@ let name2 = 'John';
 
 //primo metodo
 
-if (name1 != name2) {            
-  console.log('non è uguale')    
-} else {                         
-  console.log('è uguale')        
+if (name1 != name2) {
+  console.log('non è uguale')
+} else {
+  console.log('è uguale')
 }
 
 //secondo metodo
 
-let disuguaglianza= (name1!=name2) ? 'non è uguale' : 'è uguale';
+let disuguaglianza = (name1 != name2) ? 'non è uguale' : 'è uguale';
 console.log(disuguaglianza);
 
 //terzo metodo
 
-(name1!= name2)? console.log('non è uguale') : console.log('è uguale');
+(name1 != name2) ? console.log('non è uguale') : console.log('è uguale');
 
 //extra esercizio
 
-let disuguaglianza1= (name1.toLowerCase != name2.toLowerCase) ? 'non è uguale' : 'è uguale';
+let disuguaglianza1 = (name1.toLowerCase != name2.toLowerCase) ? 'non è uguale' : 'è uguale';
 console.log(disuguaglianza1);
 
 //exstra
 
-document.getElementById('risp').innerHTML=`il tuo nome ${disuguaglianza}`
+document.getElementById('risp').innerHTML = `il tuo nome ${disuguaglianza}`

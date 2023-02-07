@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+        /* rinominazione variabile*/
+        var prova = 'mario'
+        console.log(prova)
+        console.log(prova + ' ' + 30)
+        prova ='domenico'
+        console.log(prova)
+        console.log(prova + ' ' + 30)
+
+        //tipo di valore
+        var numero = 10;            //numerico
+        var numeroDecimale = 10.5   //numerico decimale
+
+        var nome = 'mario' //stringa '' or ""
+        var numStr = '10' //stringa  '' or ""
+
+        var buleani = true  //booleano true
+        var buleani = false //booleano false
+
+        /*operatori
+        +   somma o concatenamento
+        -   sottrazione   
+        *   moltiplicazione
+        /   divisione
+        <   minore
+        =<  minore uguale
+        >   maggiore
+        >=  maggiore uguale
+        =   uguale
+        ==
+        ===
+        */
+        
+        //backtick alt 9 6 (modo migliore)
+        var nome = 'mario'
+        var cognome = 'rossi'
+        document.write(`<p> nome : ${nome}, cognome : ${cognome}.<p>`)
+
+
+        //variabili let 
+        /*
+        {}=blocco
+
+        let a; funziona solo nel blocco
+
+        const a ; funzionasolo nel blocco ma non può essere riassegnata 
+
+        var a; funziona in tutto il documento
+        */
+
+        //let
+            var vero = true;
+            let numero1;
+
+            if(vero){
+                numero1 = 4
+            }else{
+                numero1 = 9
+            }
+
+            console.log(numero1)
+        
+        //var
+
+            var numero2;
+
+            if(vero){
+            numero2 = 4
+            }else{
+            numero2 = 9
+            }
+
+            console.log(numero2)
+
+        //const !!!NON FUNZIONA (perchè non si può riassegnare)
+
+            /*
+            const numero3;
+
+            if(vero){
+                numero3 = 4
+            }else{
+                numero3 = 9
+            }
+
+            console.log(numero3)
+            */
+        
+        //prova
+
+        let numero6 ;
+        numero6 = 66
+        console.log(numero6)
+        {
+            numero6=76
+            console.log(numero6)
+        }
+        console.log(numero6)
+
+        //operatori di assegnazione
+    </script>
+</body>
+</html>

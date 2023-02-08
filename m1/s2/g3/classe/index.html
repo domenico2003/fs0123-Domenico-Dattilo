@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <select id="tendina" onchange='selezione()'>
+        <option value="scegli">--scegli--</option>
+        <option value="mela">Mela</option>
+        <option value="pera">Pera</option>
+        <option value="ananas">Ananas</option>
+        <option value="banana">Banana</option>
+        <option value="anguria">anguria</option>
+    </select>
+
+    <div id="risultato"></div>
+
+
+    <script>
+        //oggetti
+
+
+        //array
+        let numeri=[1,2,3,4,5,6,50]
+        let arrOld = new Array()
+        /*lettura*/
+        let pizze=['margherita','diavola','4 formaggi']
+        console.log(pizze)
+
+        console.log(pizze[0])
+        /*scritturra*/
+
+        pizze[0]= 'parigina'
+        console.log(pizze)
+
+        pizze.push('marinara')
+        console.log(pizze)
+        //if and else
+        function selezione() {
+        let frutto = document.getElementById('tendina').value
+        let risposta = document.getElementById('risultato')
+
+        if (frutto == 'mela'){
+            risposta.textContent='la mela costa 1euro'
+        }else if (frutto == 'pera'){
+            risposta.textContent = 'le pere costano 2euro'
+        }else if (frutto == 'ananas'||frutto == 'banana'){
+            risposta.textContent = 'l\' ananas costana 3euro'
+        }else{
+            risposta.textContent = 'non abbiamo '+ frutto
+        }
+        }
+    </script>
+</body>
+</html>

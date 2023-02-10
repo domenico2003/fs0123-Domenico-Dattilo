@@ -124,11 +124,11 @@ console.log(characters)
   {name: Leia Organa, hair_color: "brown", eye_color: "brown"}
 */
 let personaggio={
-  name: 'Leia Organa',
+  name: "Leia Organa" ,
   hair_color: "brown",
   eye_color: "brown"
 }
-let femaleCharacters =[]
+let femaleCharacters = []
 
 for (let i = 0 ; i< 1; i++){
   femaleCharacters.push(personaggio)
@@ -244,11 +244,29 @@ Usa uno più for loop per raggiungere il risultato
 Una volta fatto crea un conosle.log per controllare la proprietà length di "characters" prima e dopo l'operazione
 */
 
-/*let nomiUguali = characters.filter(function(femaleCharacters){
-  return (femaleCharacters == characters)
-})
-console.log(nomiUguali)*/
+
+
+for( let i = 0; i < characters.length; i++){ 
+  for(let personaggi = i;personaggi == femaleCharacters; personaggi++ ){
+    if ( characters[i] == femaleCharacters[i].name ) {
+      characters.splice(i,1); 
+    }
+  }
+}
+
+console.log(characters)
+
 
 /* EXTRA ESERCIZIO 10
 Crea una funzionalità che prenda un elemento casuale dall'array "starWarsCharacters" e ne stampi in console le proprietà in modo discorsivo
 */
+
+
+
+let numeroRandom = function getRandomArbitrary(min, max) {
+  return Math.random() * (max - min) + min;
+}
+
+let numeroArrotondato = Math.floor(numeroRandom(0,starWarsCharacters.length))
+
+console.log(starWarsCharacters[numeroArrotondato])

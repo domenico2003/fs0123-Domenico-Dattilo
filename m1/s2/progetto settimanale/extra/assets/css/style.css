@@ -1,0 +1,53 @@
+
+#display{
+    text-align: end;
+    width: 245px;
+    background-color: black;
+    border: none;
+    height: 60px;
+    color: white;
+    margin: 20px;
+    font-size: 45px;
+    outline:0;
+}
+
+#tastierino{
+    display:inline-block;
+    padding: 20px;
+}
+
+.tasti{
+    display:inline-block;
+    width: calc( 100% / 4 - 0.4rem);
+    border-radius: 100%;
+    font-size: 45px;
+    background-color: rgb(76, 68, 68);
+    color: white;
+}
+
+#calcolatrice{
+    display: inline-block;
+    width: 290px;
+    background-color: black;
+    font-size: 20px ;
+    border-radius: 10%;
+    border: 2px solid orange;
+    text-align: center;
+}
+
+#zero{
+    width: 180px;
+    border-radius:15%
+}
+
+
+#risultato{
+    width: 120px;
+    border-radius: 8%;
+}
+
+.special{
+
+background-color: orange;
+color: white;
+}

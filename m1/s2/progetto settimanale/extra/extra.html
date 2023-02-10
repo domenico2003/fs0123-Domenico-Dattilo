@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+   <div id="calcolatrice">
+        <input type="text" readonly id="display">
+        <div id="tastierino">
+            <button data-tasto="7" onclick="display(this)" class="tasti">7</button>
+            <button data-tasto="8" onclick="display(this)" class="tasti">8</button>
+            <button data-tasto="9" onclick="display(this)" class="tasti">9</button>
+            <button data-tasto="/" onclick="display(this)" class="tasti special">÷</button>
+            <button data-tasto="4" onclick="display(this)" class="tasti">4</button>
+            <button data-tasto="5" onclick="display(this)" class="tasti">5</button>
+            <button data-tasto="6" onclick="display(this)" class="tasti">6</button>
+            <button data-tasto="*" onclick="display(this)" class="tasti special">X</button>
+            <button data-tasto="1" onclick="display(this)" class="tasti">1</button>
+            <button data-tasto="2" onclick="display(this)" class="tasti">2</button>
+            <button data-tasto="3" onclick="display(this)" class="tasti">3</button>
+            <button data-tasto="-" onclick="display(this)" class="tasti special">-</button>
+            <button data-tasto="0" onclick="display(this)" class="tasti"id="zero">0</button>
+            <button data-tasto="+" onclick="display(this)" class="tasti special">+</button>
+            <button data-tasto="=" onclick="calcolo()" class="tasti special" id="risultato">=</button>
+            <button data-tasto="." onclick="display(this)" class="tasti special"  >,</button>
+            <button data-tasto="c" onclick="cancella()" class="tasti special" id="cancello">c</button>
+        </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

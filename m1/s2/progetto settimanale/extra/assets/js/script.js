@@ -14,9 +14,10 @@ function cancella(){
 }
 
 //per effettuare il calcolo
-function calcolo() {
-    let display = document.querySelector('#display')
-
-      
    
-}
+    function calcolo(){   
+        let risultato =this.value(Function(document.querySelector('#display').value))
+        console.log(risultato)
+    }
+   
+

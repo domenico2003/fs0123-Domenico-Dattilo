@@ -15,9 +15,15 @@ function cancella(){
 
 //per effettuare il calcolo
    
-    function calcolo(){   
-        let risultato =this.value(Function(document.querySelector('#display').value))
-        console.log(risultato)
-    }
-   
+function calcolo(){
+let display=document.querySelector('#display')
+
+/*let operazione = display.value
+operazione.replace("",'')
+
+display.value=operazione*/
+ display.value = parseFloat(display.value)
+}
+
+
 

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="ora"></div>
+    <div id="prova"></div>
+
+    <button onclick="toggle(2)">1</button>
+    <button onclick="toggle('+')">+</button>
+    <button onclick="toggle(3)">2</button>
+<script>
+    //funzioni
+
+
+   /* function toggle(... numeri){
+        let prova = document.querySelector('#prova');
+        let simboli = numeri.split('')
+        let numero = 0
+        if (simboli == '+')
+            simboli.replace('+')
+            for (let n of simboli){
+            return simboli =+ simboli
+        }
+        prova.textContent = numero
+    }*/
+
+    //date
+        setTimeout(function(){
+          setInterval(function(){
+            let ora =document.querySelector('#ora');
+            let ora1 =new Date().toLocaleTimeString();
+            ora.innerHTML = ora1;
+        },1000) 
+        },30000)
+        
+
+
+</script>
+</body>
+</html>

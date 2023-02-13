@@ -185,3 +185,5 @@ function giveMeRandom(n){
 }
 console.log(giveMeRandom(11))
 
+let array = giveMeRandom(5)
+

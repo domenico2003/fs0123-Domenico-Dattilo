@@ -157,7 +157,7 @@ console.log(eliminarePari(numeroRandomico))
   function randomDuplicati() {
     let arr = [];
     while (arr.length < 10) {
-      let randomNum = Math.floor(Math.random() * 10);
+      let randomNum = Math.floor(Math.random() * 11);
       if (!arr.includes(randomNum)) { 
         arr.push(randomNum); 
       }

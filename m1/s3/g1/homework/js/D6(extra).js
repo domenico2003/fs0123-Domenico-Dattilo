@@ -6,7 +6,7 @@
  La funzione deve inoltre ritornare la somma di tutti i valori maggiori di 5.
 */
 
-console.log('extra')
+console.log('EXTRA!!!')
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 
@@ -37,27 +37,27 @@ checkArray(array)
 
 let shoppingCart = [
     {
-      price: 5,
+      price: 5,//45
       name:  'portafoglio',
-      id: 0124,
+      id: '0124',
       quantity: 9,
     },
     {
-        price: 7,
-        name:  'portafoglio',
-        id: 0123,
+        price: 7,//21
+        name:  'portafoglio1',
+        id: '0123',
         quantity: 3,
     },
     {
         price: 2,
-        name:  'portafoglio',
-        id: 0122,
+        name:  'portafoglio2',//2
+        id: '0122',
         quantity: 1,
     },
     {
-        price: 6,
-        name:  'portafoglio',
-        id: 0121,
+        price: 6,//48
+        name:  'portafoglio3',
+        id: '0121',
         quantity: 8,
     }
 ]
@@ -67,7 +67,7 @@ let shoppingCart = [
 function shoppingCartTotal (){
     let somma=0;
     for (let i = 0 ; i<shoppingCart.length;i++){
-        somma += shoppingCart[i].price * shoppingCart[i].quantity
+        somma += shoppingCart[i ].price * shoppingCart[i].quantity
     }
     return somma
 }
@@ -89,7 +89,7 @@ function Carrello (price,name,id,quantity) {
 
 function addToShoppingCart (){
     console.log(shoppingCart)
-    shoppingCart.push(new Carrello(10,'shampoo',0126,2))
+    shoppingCart.push(new Carrello(10,'shampoo','0126',2))//20
     console.log(shoppingCartTotal())
 }
 addToShoppingCart()
@@ -103,6 +103,25 @@ addToShoppingCart()
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+ function maxShoppingCart(){
+    let paragone= 0;
+   for(i= 0 ;i<shoppingCart.length;i++){   
+        if(paragone> shoppingCart[i].price * shoppingCart[i].quantity){
+             paragone = paragone
+        }else{
+          paragone=shoppingCart[i].price * shoppingCart[i].quantity  
+        }
+    }
+    for (i= 0 ;i<shoppingCart.length;i++){
+        if ((shoppingCart[i].price * shoppingCart[i].quantity)== paragone) {
+            return shoppingCart[i]
+        }
+    }
+    
+ }
+
+ console.log(maxShoppingCart())
+
 /* EXTRA 5
  Nel tuo eCommerce disponi di un'array di oggetti chiamato "shoppingCart". Ognuno di questi oggetti ha le seguenti proprietà: "price", "name", "id" e "quantity".
  Crea una funzione chiamata "latestShoppingCart" che riceve l'array "shoppingCart" e ritorna l'ultimo elemento.
@@ -110,12 +129,37 @@ addToShoppingCart()
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+function latestShoppingCart(){
+    return shoppingCart.pop()
+}
+
+console.log(latestShoppingCart())
+
 /* EXTRA 6
  Crea una funzione chiamata "loopUntil" che riceve un numero intero come parametro con valore tra 0 e 9.
  La funzione è composta da un ciclo che stampa un numero casuale tra 0 e 9 finchè il numero casuale non è maggiore di x per tre volte di fila.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+function loopUntil (n){
+    if(Number.isInteger(n)){
+       
+        let numeroCasuale;
+        setInterval(()=>{
+            
+            numeroCasuale=Math.floor(Math.random()*10)
+            console.log(numeroCasuale)
+            
+        },1000)
+        
+        
+    }else{
+        return 'inserisci un numero intero'
+    }
+}
+
+loopUntil(8)
 
 /* EXTRA 7
 Crea una funzione chiamata "average" che riceve un array come parametro e ne ritorna la media aritmetica. La funzione salta automaticamente i valori non numerici nell'array.

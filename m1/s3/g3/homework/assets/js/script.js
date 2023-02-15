@@ -7,7 +7,6 @@ function test() {
 
     let element = document.createElement("div");
     let bottone= document.createElement('button');
-    bottone.setAttribute(onchange,eliminazione())
     let li =document.createElement('li')
     element.classList.add('task')
     bottone.classList.add('bottone')

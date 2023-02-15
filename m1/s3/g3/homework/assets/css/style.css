@@ -1,32 +1,36 @@
 .task{
-    height: 40px;
-    width: 50rem;
-    padding-top: 15px;
+    height: 50px;
+    width: 100%;
+    /*padding-top: 15px;*/
     padding-bottom: 0px;
     font-size: 20px;
     font-weight: 600;
     border: 1px solid black;
-    text-align: center;
-    margin: 10px auto;
-    
+    margin: 5px auto;
+    background: linear-gradient(91deg,rgba(0, 157, 255, 1),rgba(0, 68, 255, 0.3));
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: center ;
 }
 
 .bottone{
-    text-align: end;
-    background-color: red;
-    border: 1px solid black;
-    border-radius: 30%;
-    padding: 5px;
-    font-weight: 700;
     
+    background: linear-gradient(91deg,rgba(255, 2, 2, 1),rgba(243, 25, 25, 0.9),rgba(227, 0, 0, 0.8));
+    border: 2px solid black;
+    border-radius: 15%;
+    padding: 5px 10px;
+    font-weight: 700;
+    margin-left: auto;
+    margin-right: 20px;
 }
 
 #container{
-    width:60rem ;
-    background-color: aqua;
+    width:57rem ;
+    background: linear-gradient(91deg,rgba(0, 68, 255, 0.788),rgba(0, 157, 255, 1));
     margin: auto;
-    text-align: center;
+    
     padding: 10px;
+
 }
 
 #target{
@@ -36,16 +40,37 @@
 
 body{
     margin:0;
+    background-image: url(../img/sfondo1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
-input{
-    width: 46.3rem;
+#testo{
+    border: 1px solid darkblue;
+    border-radius: 15%;
+    font-weight: bold;
+    font-size: 1.25rem;
+    background: linear-gradient(91deg,rgba(0, 67, 200, 0.813),rgba(0, 204, 255, 0.763));
+    width: 48rem;
     height: 3rem;
-    margin: 10px
+    margin: 10px;
+    color: white;
+    padding-left: 10px;
+
 }
 
 .li{
     display: inline;
     padding : 20px;
+}
+
+#invio{
+    padding: 12px 30px 8px 30px;
+    background-color: blue;
+    color:white;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+   
 }

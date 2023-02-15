@@ -12,14 +12,14 @@ function test() {
     bottone.classList.add('bottone')
     li.classList.add('li')
 
-if(input.value  !==  ""){
-    li.appendChild(document.createTextNode(input.value));
-    document.getElementById('target').appendChild(element);
-    element.appendChild(li)
-   element.appendChild(bottone)
-   bottone.appendChild(document.createTextNode('DELETE'));
-    bottone.addEventListener('click',()=>{
-        element.remove() })
+    if(input.value  !==  ""){
+        li.appendChild(document.createTextNode(input.value));
+        document.getElementById('target').appendChild(element);
+        element.appendChild(li)
+        element.appendChild(bottone)
+        bottone.appendChild(document.createTextNode('DELETE'));
+        bottone.addEventListener('click',()=>{
+            element.remove() })
     
     }
   

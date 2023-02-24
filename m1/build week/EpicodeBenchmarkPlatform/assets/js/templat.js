@@ -378,7 +378,7 @@ proceed.addEventListener('click', () => {
                                 
 
 
-                                if (percentage >= 40) {
+                                if (percentage >= 60) {
                                     message = 'Congratulations!';
                                     message1 = 'You passed the exam.';
                                     message2 = ' I will send you the certificate in a few minutes. Please check your email (including promotions and spam folder).';
